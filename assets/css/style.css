@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,64 @@
     font-family: 'Poppins' !important;
 }
 
+ul {
+    padding-left: 0 !important;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
 .container-desc {
     width: 95%;
     margin: 0 auto;
 }
+
+/*? offcanvas start */
+
+.offcanvas-backdrop {
+    background-color: transparent !important;
+}
+
+/* .offcanvas.offcanvas-top:not(.show) {
+    visibility: hidden;
+}
+
+.offcanvas.offcanvas-top.show {
+    transform: translateY(0);
+} */
+
+.offcanvas-header {
+    padding: 5px !important;
+}
+
+.offcanvas.offcanvas-top {
+    /* top: 8rem !important;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color); */
+
+    a {
+        color: #141414;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: .04em;
+    }
+}
+
+.offcanvas.offcanvas-top.show {
+    transform: translateY(0);
+    height: 45vh;
+}
+
+/*? offcanvas end */
+
 
 /* header start */
 header {
@@ -58,7 +114,101 @@ header {
                 --bs-dropdown-min-width: none !important
             }
         }
+
+        a {
+            color: #141414;
+
+            svg {
+                cursor: pointer;
+            }
+        }
+
+        .shop {
+            span {
+                top: -50%;
+                right: -50%;
+                font-size: 12px;
+                background: #000;
+                color: #fff;
+                border-radius: 50%;
+                width: 17px;
+                height: 17px;
+            }
+        }
     }
 }
 
 /* header end */
+
+/* nav start */
+nav {
+    height: 60px;
+
+    ul {
+        a {
+            color: #141414;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .04em;
+        }
+    }
+}
+
+/* nav end */
+
+/* slider section start */
+.slider-section {
+    .carousel-fade {
+        .carousel-item {
+            transition: opacity 2s ease-in-out;
+
+            img {
+                height: 500px !important;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .slider-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h2 {
+            font-family: 'Italiana' !important;
+            letter-spacing: 0.48rem;
+            font-size: 80px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        a {
+            padding: 12px 60px;
+            background-color: #000;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .04em;
+
+        }
+    }
+}
+
+/* slider section end */
+
+
+
+/*! responsive start  */
+@media(max-width:992px) {
+    .h-logo {
+        img {
+            width: 100px !important;
+        }
+    }
+}
+
+/*! responsive end  */
