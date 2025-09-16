@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ayuna - Home</title>
+    <link rel="icon" href="assets/images/logo-white.png" />
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,9 +20,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- scroll top start -->
+    <button
+      class="page-scroll-button d-flex align-items-center justify-content-center"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- scroll top end -->
+
     <!-- header start -->
     <header>
       <div
@@ -91,7 +108,6 @@
               >
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="our-clients.html">Our clients</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -111,7 +127,6 @@
       >
         <li><a href="#">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="our-clients.html">Our clients</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -144,7 +159,7 @@
           </div>
           <div class="carousel-item position-relative">
             <img
-              src="assets/images/slider-img-3.jpg"
+              src="assets/images/slider-img-15.jpg"
               class="d-block w-100"
               alt="img"
             />
@@ -157,7 +172,7 @@
           </div>
           <div class="carousel-item position-relative">
             <img
-              src="assets/images/slider-img-4.jpg"
+              src="assets/images/slider-img-14.jpg"
               class="d-block w-100"
               alt="img"
             />
@@ -204,16 +219,379 @@
     </section>
     <!-- slider section end -->
 
+    <!-- about section start -->
+    <section class="about-section">
+      <div class="title text-center">
+        <h3>About</h3>
+      </div>
+      <div
+        class="container-desc d-flex align-items-center justify-content-between"
+      >
+        <div class="about-content w-100">
+          <h2>Unique Design</h2>
+          <p>
+            Egestas pretium aenean pharetra magna ac placerat vestibulum. Eget
+            gravida cum sociis natoque penatibus. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Necessitatibus facilis optio animi
+            iste quaerat vel labore non velit doloribus beatae? Consequuntur
+            impedit numquam ab. Quasi nam temporibus accusamus tempora error,
+            velit itaque quod nesciunt officiis doloribus quia animi
+            necessitatibus suscipit.
+          </p>
+          <a href="about.html">
+            <span>Read more</span>
+          </a>
+        </div>
+        <div class="w-100">
+          <img
+            class="w-100"
+            src="assets/images/about-section-img.jpg"
+            alt="img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- product section start -->
+    <section class="product-section">
+      <div class="title text-center">
+        <h3>Products</h3>
+      </div>
+      <div
+        class="container-desc d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/product-img-1.jpg" alt="img" />
+          </div>
+          <div class="content">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="product-detail.html">Circle Necklace</a>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="categorie">
+              <h5>Accessories / Bracelests</h5>
+            </div>
+            <div class="price">
+              <p>52.00$</p>
+            </div>
+          </div>
+          <div class="hover-image">
+            <img src="assets/images/product-img-1.1.jpg" alt="img" />
+          </div>
+          <div class="more-detail">
+            <a href="product-detail.html">Select options</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/product-img-2.jpg" alt="img" />
+          </div>
+          <div class="content">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="product-detail.html">Circle Necklace</a>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="categorie">
+              <h5>Accessories / Bracelests</h5>
+            </div>
+            <div class="price">
+              <p>52.00$</p>
+            </div>
+          </div>
+          <div class="hover-image">
+            <img src="assets/images/product-img-2.2.jpg" alt="img" />
+          </div>
+          <div class="more-detail">
+            <a href="product-detail.html">Select options</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/product-img-3.jpg" alt="img" />
+          </div>
+          <div class="content">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="product-detail.html">Circle Necklace</a>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="categorie">
+              <h5>Accessories / Bracelests</h5>
+            </div>
+            <div class="price">
+              <p>52.00$</p>
+            </div>
+          </div>
+          <div class="hover-image">
+            <img src="assets/images/blog-img-11.jpg" alt="img" />
+          </div>
+          <div class="more-detail">
+            <a href="product-detail.html">Select options</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="assets/images/product-img-4.jpg" alt="img" />
+          </div>
+          <div class="content">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="product-detail.html">Circle Necklace</a>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="categorie">
+              <h5>Accessories / Bracelests</h5>
+            </div>
+            <div class="price">
+              <p>52.00$</p>
+            </div>
+          </div>
+          <div class="hover-image">
+            <img src="assets/images/product-img-4.2.jpg" alt="img" />
+          </div>
+          <div class="more-detail">
+            <a href="product-detail.html">Select options</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio-section">
+      <div class="title text-center">
+        <h3>Portfolio</h3>
+      </div>
+      <div
+        class="container-desc d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="portfolio-img">
+          <a href="portfolio.html"
+            ><img src="assets/images/gallery-img-1.jpg" alt="img"
+          /></a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.html">
+            <img src="assets/images/gallery-img-2.jpg" alt="img"
+          /></a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-4.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-8.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-5.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-6.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-7.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+        <div class="portfolio-img">
+          <a href="portfolio.hmtl">
+            <img src="assets/images/gallery-img-3.jpg" alt="img" />
+          </a>
+          <div class="layout-portfolio"></div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- testimonial section start -->
+    <section class="testimonial-section position-relative">
+      <div class="container-desc">
+        <div class="title text-center">
+          <h3>Kind Words</h3>
+        </div>
+        <div class="swiper mySwiper position-absolute">
+          <div class="swiper-wrapper d-flex align-items-center">
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Mauris ut malesuada orem Ipsum estibulum ondimentum mal es
+                  uid scelerisque in blandit libero atmis."
+                </h4>
+              </div>
+              <div>
+                <p>Anna Heelou</p>
+                <span> Los Angeles , 3 year ago</span>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Condimentum males uada sceleris que in mauris ut malesuada
+                  orem Ipsum estibulum blandit libero at."
+                </h4>
+              </div>
+              <div>
+                <p>Michel Wooud</p>
+                <span> Los Angeles , 3 year ago</span>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Lorem Ipsum estibulum blandit lib ero at mauris condimentum
+                  malui da scelerisque in mauris ut malda.'
+                </h4>
+              </div>
+              <div>
+                <p>Monica Stoung</p>
+                <span> New York , 3 year ago</span>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Mauris ut malesuada orem Ipsum estibulum ondimentum mal es
+                  uid scelerisque in blandit libero atmis."
+                </h4>
+              </div>
+              <div>
+                <p>Anna Heelou</p>
+                <span> Los Angeles , 3 year ago</span>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Condimentum males uada sceleris que in mauris ut malesuada
+                  orem Ipsum estibulum blandit libero at."
+                </h4>
+              </div>
+              <div>
+                <p>Michel Wooud</p>
+                <span> Los Angeles , 3 year ago</span>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column">
+              <div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>
+                  "Lorem Ipsum estibulum blandit lib ero at mauris condimentum
+                  malui da scelerisque in mauris ut malda.'
+                </h4>
+              </div>
+              <div>
+                <p>Monica Stoung</p>
+                <span> New York , 3 year ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section end -->
+
+    <!-- blog section start -->
+    <section class="blog-section">
+      <div class="title text-center">
+        <h3>Blog</h3>
+      </div>
+      <div
+        class="container-desc d-flex align-items-center justify-content-center gap-4"
+      >
+        <div class="item position-relative">
+          <img class="w-100" src="assets/images/blog-img-11.jpg" alt="img" />
+          <div
+            class="text position-absolute d-flex flex-column align-items-center"
+          >
+            <h2>Pearl</h2>
+            <a href="blog.html">More</a>
+          </div>
+        </div>
+        <div class="item position-relative">
+          <img class="w-100" src="assets/images/blog-img-2.jpg" alt="img" />
+          <div
+            class="text position-absolute d-flex flex-column align-items-center"
+          >
+            <h2>Euphoria</h2>
+            <a href="blog.html">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- font awesome -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
       integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
