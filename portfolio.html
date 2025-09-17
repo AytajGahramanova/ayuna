@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayuna - Portfolio</title>
+    <link rel="icon" href="assets/images/logo-white.png" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+  </head>
+  <body>
+    <!-- scroll top start -->
+    <button
+      class="page-scroll-button d-flex align-items-center justify-content-center"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- scroll top end -->
+
+    <!-- header start -->
+    <header>
+      <div
+        class="container-desc d-flex align-items-center justify-content-between"
+      >
+        <div class="h-search d-none d-lg-flex align-items-center gap-2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="h-logo">
+          <a href="#"
+            ><img src="./assets/images/logo-black.png" alt="logo"
+          /></a>
+        </div>
+        <div class="h-right d-flex align-items-center gap-3 gap-lg-4">
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Az
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">En</a></li>
+              <li><a class="dropdown-item" href="#">Ru</a></li>
+            </ul>
+          </div>
+          <div class="user">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="wishlist">
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+          </div>
+          <div class="shop position-relative">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center"
+              >0</span
+            >
+          </div>
+          <div>
+            <i
+              class="d-block d-lg-none fa-solid fa-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+            ></i>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center offcanvas-body"
+            >
+              <ul
+                class="container-desc d-flex flex-column align-items-center justify-content-center gap-2"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav start -->
+    <nav class="d-none d-lg-flex">
+      <ul
+        class="container-desc d-flex align-items-center justify-content-center gap-5"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- nav end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio-section portfolio-page">
+      <div class="title text-center">
+        <h3>Portfolio</h3>
+      </div>
+      <div
+        class="container-desc d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-1.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-1.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-2.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-2.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-4.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-4.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-8.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-8.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-5.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-5.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-6.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-6.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-7.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-7.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-img">
+          <img src="assets/images/gallery-img-3.jpg" alt="img" />
+          <div class="hover">
+            <a
+              data-src="assets/images/gallery-img-3.jpg"
+              data-fancybox="gallery-photo"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+      integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

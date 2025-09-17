@@ -49,3 +49,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// fancybox
+Fancybox.bind("[data-fancybox]", {});
