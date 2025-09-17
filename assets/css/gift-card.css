@@ -116,3 +116,18 @@
         }
     }
 }
+
+/* ! responsive start */
+@media(max-width:992px) {
+    .gift-card {
+        .item {
+            width: 100%;
+
+            img {
+                height: 400px !important;
+            }
+        }
+    }
+}
+
+/* ! responsive end */
