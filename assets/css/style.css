@@ -469,8 +469,8 @@ nav {
         background-image: url("../images/home-gift-card-bg.jpg");
         background-position: center;
         background-size: cover;
-        height: 210px;
-        gap: 7rem;
+        height: 300px;
+        gap: 15rem;
 
         h2 {
             font-weight: 500;
@@ -482,7 +482,7 @@ nav {
         }
 
         .content {
-            width: 500px;
+            width: 400px;
 
             p {
                 font-weight: 400;
@@ -679,6 +679,99 @@ nav {
 
 /* blog section end */
 
+/* footer start */
+footer {
+    background-color: #f6f4f2;
+    padding: 80px;
+
+    form {
+        position: relative;
+        width: 100%;
+
+        input {
+            position: relative;
+            border: 1px solid #c2b2b2ad;
+            padding: 10px 20px;
+            font-size: 15px;
+            width: 100%;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 11px 20px;
+            font-size: 14px;
+        }
+    }
+
+    .item {
+        img {
+            width: 130px;
+        }
+
+        p {
+            font-weight: 400;
+            color: #000000a1;
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+
+        h3 {
+            color: #141414;
+            text-transform: uppercase;
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: .04em;
+
+        }
+
+        a {
+            color: #141414;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: .04em;
+        }
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+
+        h2 {
+            color: #141414;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: .04em;
+            margin-bottom: 0;
+        }
+
+        span {
+            color: #141414;
+            font-weight: 500;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: .04em;
+        }
+
+        .footer-email {
+            color: #141414;
+            text-transform: none !important;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: .04em;
+        }
+
+    }
+}
+
+/* footer end */
+
 /*! responsive start  */
 @media(max-width:992px) {
     .h-logo {
@@ -764,6 +857,18 @@ nav {
                 img {
                     height: 400px !important;
                 }
+            }
+        }
+    }
+
+    footer {
+        padding: 30px !important;
+
+        .row {
+            gap: 15px;
+
+            .item {
+                align-items: start !important;
             }
         }
     }
