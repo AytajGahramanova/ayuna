@@ -25,14 +25,10 @@
                     margin-bottom: 12px;
                 }
 
-                input[type='password'] {
-                    padding-right: 30px;
-                }
-
                 svg {
                     position: absolute;
-                    top: 70%;
-                    right: 25px;
+                    top: 74%;
+                    right: 20px;
                     transform: translateY(-50%);
                     cursor: pointer;
                 }
@@ -78,8 +74,8 @@
             height: 40px;
             max-width: 100%;
             padding: 0 20px;
-            background: none;
             width: 100%;
+            outline: none;
         }
 
         button {
