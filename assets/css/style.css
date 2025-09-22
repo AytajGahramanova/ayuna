@@ -26,6 +26,14 @@ a {
     text-decoration: none;
 }
 
+/* .active-link {
+    color: #a15127 !important;
+} */
+
+.page-link {
+    color: #141414 !important;
+}
+
 .container-desc {
     width: 95%;
     margin: 0 auto;
@@ -203,20 +211,50 @@ header {
 /* header end */
 
 /* nav start */
-nav {
+.nav {
     height: 60px;
 
     ul {
-        a {
-            color: #141414;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: .04em;
+        li {
+            a {
+                position: relative;
+                display: inline-block;
+                color: #141414;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: .04em;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #000;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.4s ease;
+                }
+            }
+
+            &:hover a::after {
+                transform: scaleX(1);
+            }
+
+            & a.active-link {
+                transform: scaleX(1);
+            }
+
+            .active-link::after {
+                transform: scaleX(1);
+            }
         }
     }
 }
+
 
 /* nav end */
 

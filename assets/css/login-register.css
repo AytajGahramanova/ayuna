@@ -42,7 +42,8 @@
                 align-items: center;
 
                 span {
-                    color: #141414;
+                    color: #141414ac;
+
                 }
             }
 
@@ -54,8 +55,10 @@
                 justify-content: start;
 
                 a {
+                    color: #141414;
                     font-size: 15px;
-                    color: #141414ac;
+                    text-decoration: underline;
+                    font-weight: 500;
                 }
             }
         }
