@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayuna - Blog detail</title>
+    <title>Ayuna - Wishlist</title>
     <link rel="icon" href="assets/images/logo-white.png" />
     <!-- bootstrap -->
     <link
@@ -25,15 +25,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- Fancybox -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/blog.css" />
-    <link rel="stylesheet" href="./assets/css/blog-detail.css" />
+    <link rel="stylesheet" href="./assets/css/cart-wishlist.css" />
   </head>
   <body>
     <!-- scroll top start -->
@@ -74,7 +67,7 @@
             </ul>
           </div>
           <div class="user">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
           </div>
           <div class="wishlist">
             <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
@@ -146,169 +139,50 @@
     <section class="breadcrumb-section">
       <div class="breadcrumb">
         <a href="index.html">Home / </a>
-        <a href="#">Blog-detail</a>
+        <a href="#">Wishlist</a>
       </div>
       <div class="layer"></div>
     </section>
     <!-- breadcrumb end -->
 
-    <!-- blog start -->
-    <div class="blog-wrapper">
-      <div class="title text-center">
-        <h3>Blog</h3>
-        <div class="container-desc">
-          <div class="row flex-column flex-lg-row">
-            <div class="col-12 col-lg-8 blog-left">
-              <div class="blog-card mb-4 col-12">
-                <div class="image">
-                  <img
-                    class="w-100"
-                    src="assets/images/blog-list-img-1.jpg"
-                    alt="img"
-                  />
-                </div>
-                <div class="content align-items-start justify-content-start">
-                  <div class="blog-date d-flex align-items-center">
-                    <span>06 December - </span>
-                    <span class="blog-categories"> Gold / Lifestyle</span>
-                  </div>
-                  <div
-                    class="d-flex flex-column align-items-start justify-content-start text-start"
-                  >
-                    <h2>Italian Getaway</h2>
-                    <p>
-                      Ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                      ac lectus mi. Curabitur non ligula facilisis, ultrices ex
-                      sed, viverra justo. Curabitur condimentum, sem nec ornare
-                      fermentum, augue erat bibendum urna, vitae dignissim
-                      tellus turpis a est. Morbi porta velit at aliquam maximus.
-                      Nullam id dolor finibus, efficitur lorem ut, consequat
-                      nisl. Nunc sit amet mollis sem. Praesent accumsan laoreet
-                      massa. Ipsum dolor sit amet, consectetur adipiscing elit.
-                      Donec ac lectus mi. Curabitur non ligula facilisis,
-                      ultrices ex sed, viverra justo. Curabitur condimentum, sem
-                      nec ornare fermentum, augue erat bibendum urna, vitae
-                      dignissim tellus turpis a est. Morbi porta velit at
-                      aliquam maximus. Nullam id dolor finibus, efficitur lorem
-                      ut, consequat nisl. Nunc sit amet mollis sem. Praesent
-                      accumsan laoreet massa. Ipsum dolor sit amet, consectetur
-                      adipiscing elit. Donec ac lectus mi. Curabitur non ligula
-                      facilisis, ultrices ex sed, viverra justo. Curabitur
-                      condimentum, sem nec ornare fermentum, augue erat bibendum
-                      urna, vitae dignissim tellus turpis a est. Morbi porta
-                      velit at aliquam maximus. Nullam id dolor finibus,
-                      efficitur lorem ut, consequat nisl. Nunc sit amet mollis
-                      sem. Praesent accumsan laoreet massa.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="blog-related d-flex align-items-center gap-3 gap-lg-4 flex-column flex-lg-row"
-              >
-                <div class="related-cards w-100">
-                  <a href="blog-detail.html">
-                    <img
-                      class="w-100 object-fit-cover"
-                      src="assets/images/blog-img-1.jpg"
-                      alt="img"
-                  /></a>
-                </div>
-                <div class="related-cards w-100">
-                  <a href="blog-detail.html">
-                    <img
-                      class="w-100 object-fit-cover"
-                      src="assets/images/blog-img-2.jpg"
-                      alt="img"
-                  /></a>
-                </div>
-                <div class="related-cards w-100">
-                  <a href="blog-detail.html">
-                    <img
-                      class="w-100 object-fit-cover"
-                      src="assets/images/blog-img-11.jpg"
-                      alt="img"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 blog-right mt-5 mt-lg-0">
-              <div class="position-relative w-100 mb-3">
-                <input type="text" placeholder="Seach" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="categories d-flex flex-column align-items-start mb-3">
-                <h5>Categories</h5>
-                <ul class="d-flex flex-column align-items-start gap-2">
-                  <li>
-                    <a href="">Gold</a>
-                  </li>
-                  <li>
-                    <a href="">Handmade</a>
-                  </li>
-                  <li>
-                    <a href="">Lifestyle</a>
-                  </li>
-                  <li>
-                    <a href="">Materials</a>
-                  </li>
-                  <li>
-                    <a href="">Pastel</a>
-                  </li>
-                  <li>
-                    <a href="">Pearls</a>
-                  </li>
-                  <li>
-                    <a href="">Rose</a>
-                  </li>
-                  <li>
-                    <a href="">Silver</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="posts d-flex flex-column align-items-start mb-3">
-                <h5>Popular Posts</h5>
-                <div class="d-flex mb-2 align-content-center">
-                  <div class="post-img">
-                    <a href="blog-details.html">
-                      <img src="assets/images/blog-list-img-5.jpg" alt="img" />
-                    </a>
-                  </div>
-                  <div class="post-info d-flex flex-column align-items-start">
-                    <h4>10 ways of wearing jewelry</h4>
-                    <span>Pearls / Sliver</span>
-                  </div>
-                </div>
-                <div class="d-flex mb-2 align-content-center">
-                  <div class="post-img">
-                    <a href="blog-details.html">
-                      <img src="assets/images/blog-list-img-3.jpg" alt="img" />
-                    </a>
-                  </div>
-                  <div class="post-info d-flex flex-column align-items-start">
-                    <h4>The new luxury of online shops</h4>
-                    <span>Pearls / Sliver</span>
-                  </div>
-                </div>
-                <div class="d-flex mb-2 align-content-center">
-                  <div class="post-img">
-                    <a href="blog-details.html">
-                      <img src="assets/images/blog-f-img-4.jpg" alt="img" />
-                    </a>
-                  </div>
-                  <div class="post-info d-flex flex-column align-items-start">
-                    <h4>We work with the best jewelers</h4>
-                    <span>Pearls / Sliver</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- wishlist start -->
+    <div class="cart-wishlist-wrapper mt-5 mb-5">
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th>Məhsul</th>
+                <th>Məhsulun adı</th>
+                <th>Qiymət</th>
+                <th>Səbətə at</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="assets/images/product-img-2.jpg" alt="img" /></td>
+                <td>Aksesuar 1</td>
+                <td>5 ₼</td>
+                <td><i class="fa-solid fa-cart-shopping"></i></td>
+              </tr>
+              <tr>
+                <td><img src="assets/images/product-img-2.jpg" alt="img" /></td>
+                <td>Aksesuar 1</td>
+                <td>5 ₼</td>
+                <td><i class="fa-solid fa-cart-shopping"></i></td>
+              </tr>
+              <tr>
+                <td><img src="assets/images/product-img-2.jpg" alt="img" /></td>
+                <td>Aksesuar 1</td>
+                <td>5 ₼</td>
+                <td><i class="fa-solid fa-cart-shopping"></i></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-
-    <!--blog end -->
+    <!-- wishlist end -->
 
     <!-- footer start -->
     <footer>
@@ -316,9 +190,9 @@
         <div class="row">
           <div class="item col-12 col-lg-3">
             <div>
-              <a href="index.html">
-                <img src="assets/images/logo-black.png" alt="logo" />
-              </a>
+              <a href="index.html"
+                ><img src="assets/images/logo-black.png" alt="logo"
+              /></a>
             </div>
             <div>
               <p>
@@ -425,8 +299,6 @@
     ></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- fancybox js -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>

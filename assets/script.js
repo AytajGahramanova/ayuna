@@ -54,21 +54,42 @@ var swiper = new Swiper(".mySwiper", {
 Fancybox.bind("[data-fancybox]", {});
 
 // login and register password
-let passwordInput = document.querySelector(".password-input");
-let svg = document.querySelector(".fa-eye-slash");
+// let passwordInput = document.querySelector(".password-input");
+// let svg = document.querySelector(".fa-eye-slash");
 
-console.log(svg);
+// console.log(svg);
 
-svg.addEventListener("click", () => {
-  console.log("click");
+// svg.addEventListener("click", () => {
+//   console.log("click");
 
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    svg.classList.remove("fa-eye-slash");
-    svg.classList.add("fa-eye");
-  } else {
-    passwordInput.type = "password";
-    svg.classList.remove("fa-eye");
-    svg.classList.add("fa-eye-slash");
-  }
-});
+//   if (passwordInput.type === "password") {
+//     passwordInput.type = "text";
+//     svg.classList.remove("fa-eye-slash");
+//     svg.classList.add("fa-eye");
+//   } else {
+//     passwordInput.type = "password";
+//     svg.classList.remove("fa-eye");
+//     svg.classList.add("fa-eye-slash");
+//   }
+// });
+
+// quantity-buttons
+// const quantityWrappers = document.querySelectorAll(".quantity-buttons");
+
+// quantityWrappers.forEach((wrapper) => {
+//   const decrementBtn = wrapper.querySelector(".decrement");
+//   const incrementBtn = wrapper.querySelector(".increment");
+//   const input = wrapper.querySelector(".counter");
+
+//   decrementBtn.addEventListener("click", () => {
+//     let value = parseInt(input.value);
+//     if (value > 1) {
+//       input.value = value - 1;
+//     }
+//   });
+
+//   incrementBtn.addEventListener("click", () => {
+//     let value = parseInt(input.value);
+//     input.value = value + 1;
+//   });
+// });
