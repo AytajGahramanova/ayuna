@@ -102,6 +102,18 @@
             }
         }
     }
+
+    .total-cart {
+        width: 500px;
+        padding: 10px;
+
+        h3 {
+            border-bottom: 1px solid #dee2e6;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
 }
 
 .quantity-buttons {
