@@ -16,6 +16,7 @@ body::selection {
 
 ul {
     padding-left: 0 !important;
+    margin-left: 0 !important;
 
     li {
         list-style: none;
@@ -420,10 +421,10 @@ header {
 
         .product-image {
             position: relative;
+            overflow: hidden;
 
             img {
                 width: 100%;
-                /* aspect-ratio: 800 / 825; */
                 height: auto;
                 object-fit: cover;
             }
@@ -436,11 +437,12 @@ header {
             z-index: 1;
             opacity: 0;
             transition: opacity .55s ease;
-            aspect-ratio: 4 / 5;
+            width: 100%;
+            height: 331px;
+            overflow: hidden;
 
             img {
                 width: 100%;
-                /* aspect-ratio: 800 / 825; */
                 height: auto;
                 object-fit: cover;
             }
@@ -476,7 +478,7 @@ header {
 
         .more-detail {
             position: absolute;
-            bottom: 22%;
+            bottom: 27%;
             left: 0;
             width: 100%;
             display: flex;
@@ -486,7 +488,7 @@ header {
             text-align: center;
             z-index: 3;
             opacity: 0;
-            transform: translateY(100%);
+            transform: translateY(30%);
             transition: opacity .25s ease-out, transform .6s cubic-bezier(.25, .46, .45, .94);
 
             a {
@@ -833,7 +835,7 @@ footer {
         }
 
         a {
-            color: #141414;
+            color: rgb(0, 0, 0, 0.6);
             text-transform: uppercase;
             font-size: 13px;
             font-weight: 400;
@@ -875,6 +877,10 @@ footer {
         }
 
     }
+
+    .phone-f {
+        color: #141414 !important;
+    }
 }
 
 /* footer end */
@@ -902,17 +908,13 @@ footer {
                 max-width: 900px;
 
                 h2 {
-                    font-size: 60px !important;
+                    font-size: 60px;
                 }
             }
         }
     }
 
     .product-section {
-        .product {
-            width: 100% !important;
-        }
-
         .container-desc {
             flex-direction: column;
         }
@@ -976,6 +978,36 @@ footer {
 
             .item {
                 align-items: start !important;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .breadcrumb-section {
+        height: 200px !important;
+
+        a {
+            font-size: 13px !important;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .about-section {
+        .about-content {
+            h2 {
+                font-size: 45px !important;
+            }
+        }
+    }
+
+    .slider-section {
+        .slider-content {
+            h2 {
+                font-size: 52px !important;
             }
         }
     }
