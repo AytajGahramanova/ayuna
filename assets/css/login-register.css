@@ -81,7 +81,7 @@
             outline: none;
         }
 
-        button {
+        .login-submit-btn {
             background-color: #141414;
             border: 0;
             color: #ffffff;
