@@ -544,6 +544,8 @@ header {
 
             img {
                 width: 100%;
+                aspect-ratio: 350 / 366;
+                object-fit: cover;
             }
 
             &:hover .layout-portfolio {
