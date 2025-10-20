@@ -14,6 +14,11 @@
             margin: 25px 0;
         }
     }
+
+    img {
+        aspect-ratio: 760 / 552;
+        object-fit: cover;
+    }
 }
 
 /* breadcrumb */
@@ -56,6 +61,8 @@
 
     img {
         max-width: 750px;
+        aspect-ratio: 750 / 683;
+        object-fit: cover;
     }
 
     .content {
